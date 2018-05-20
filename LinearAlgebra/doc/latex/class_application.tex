@@ -1,0 +1,73 @@
+\hypertarget{class_application}{}\section{Application Class Reference}
+\label{class_application}\index{Application@{Application}}
+
+
+Command Line Interface of the program.  
+
+
+
+
+{\ttfamily \#include $<$Application.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}{Application} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the class. Imports predefined matrices. \end{DoxyCompactList}\item 
+void \hyperlink{class_application_a68965449404743bf1add056784d6cf81}{run} ()
+\begin{DoxyCompactList}\small\item\em Runs command panel of the program. \end{DoxyCompactList}\item 
+bool \hyperlink{class_application_add6aceb17b23990e6867256496183bb1}{search\+Name} (std\+::string n)
+\item 
+int \hyperlink{class_application_ae79c4e186a04cb48c284b2a9c6228c8e}{find\+Index} (std\+::string n)
+\begin{DoxyCompactList}\small\item\em Traverses the matrix\+Container and returns the index of matrix named \char`\"{}std\+::string n\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Command Line Interface of the program. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}\label{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}} 
+\index{Application@{Application}!Application@{Application}}
+\index{Application@{Application}!Application@{Application}}
+\subsubsection{\texorpdfstring{Application()}{Application()}}
+{\footnotesize\ttfamily Application\+::\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor of the class. Imports predefined matrices. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_application_ae79c4e186a04cb48c284b2a9c6228c8e}\label{class_application_ae79c4e186a04cb48c284b2a9c6228c8e}} 
+\index{Application@{Application}!find\+Index@{find\+Index}}
+\index{find\+Index@{find\+Index}!Application@{Application}}
+\subsubsection{\texorpdfstring{find\+Index()}{findIndex()}}
+{\footnotesize\ttfamily int Application\+::find\+Index (\begin{DoxyParamCaption}\item[{std\+::string}]{n }\end{DoxyParamCaption})}
+
+
+
+Traverses the matrix\+Container and returns the index of matrix named \char`\"{}std\+::string n\char`\"{}. 
+
+\mbox{\Hypertarget{class_application_a68965449404743bf1add056784d6cf81}\label{class_application_a68965449404743bf1add056784d6cf81}} 
+\index{Application@{Application}!run@{run}}
+\index{run@{run}!Application@{Application}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Application\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Runs command panel of the program. 
+
+\mbox{\Hypertarget{class_application_add6aceb17b23990e6867256496183bb1}\label{class_application_add6aceb17b23990e6867256496183bb1}} 
+\index{Application@{Application}!search\+Name@{search\+Name}}
+\index{search\+Name@{search\+Name}!Application@{Application}}
+\subsubsection{\texorpdfstring{search\+Name()}{searchName()}}
+{\footnotesize\ttfamily bool Application\+::search\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{n }\end{DoxyParamCaption})}
+
+It takes a string as argument n and traverses the matrix\+Container for looking if there is a \hyperlink{class_matrix}{Matrix} with named n. If there is, returns false, otherwise true. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_application_8h}{Application.\+h}\item 
+\hyperlink{_application_8cpp}{Application.\+cpp}\end{DoxyCompactItemize}

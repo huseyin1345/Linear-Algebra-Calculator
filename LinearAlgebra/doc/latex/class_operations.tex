@@ -1,0 +1,90 @@
+\hypertarget{class_operations}{}\section{Operations Class Reference}
+\label{class_operations}\index{Operations@{Operations}}
+
+
+Contains \hyperlink{class_matrix}{Matrix} \hyperlink{class_operations}{Operations}.  
+
+
+
+
+{\ttfamily \#include $<$Matrix\+Operations.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_operations_a23b256cbd8432c02e7501c7c04d654d7}{summation} (\hyperlink{class_matrix}{Matrix} $\ast$m1, \hyperlink{class_matrix}{Matrix} $\ast$m2, \hyperlink{class_matrix}{Matrix} $\ast$target)
+\item 
+void \hyperlink{class_operations_a45086ee9e548ad7a199cc4214b841dff}{subtraction} (\hyperlink{class_matrix}{Matrix} $\ast$m1, \hyperlink{class_matrix}{Matrix} $\ast$m2, \hyperlink{class_matrix}{Matrix} $\ast$target)
+\item 
+void \hyperlink{class_operations_a9187a03ccde6ce58d8a79e0799ae0579}{multiplication} (\hyperlink{class_matrix}{Matrix} $\ast$m1, \hyperlink{class_matrix}{Matrix} $\ast$m2, \hyperlink{class_matrix}{Matrix} $\ast$target)
+\item 
+void \hyperlink{class_operations_a58bdbb6d16f1848424bbe4bba8e50630}{transpoze} (\hyperlink{class_matrix}{Matrix} $\ast$m, \hyperlink{class_matrix}{Matrix} $\ast$target)
+\item 
+float \hyperlink{class_operations_a4128cc9366ded09e0a96ef7b229a8d30}{determinant} (\hyperlink{class_matrix}{Matrix} $\ast$m)
+\item 
+void \hyperlink{class_operations_a6abe02b47920ad0f5a4b87a16d1e8bd0}{inverse} (\hyperlink{class_matrix}{Matrix} $\ast$m, \hyperlink{class_matrix}{Matrix} $\ast$target)
+\item 
+void \hyperlink{class_operations_a34a11aa508d4fa8343dea7ce3cb12a8f}{reduced\+Row\+Echelon\+Form} (\hyperlink{class_matrix}{Matrix} $\ast$m, \hyperlink{class_matrix}{Matrix} $\ast$target)
+\item 
+void \hyperlink{class_operations_a3ebc22c78ef8e19ebdc5d2761b103d22}{scalar\+Multiplication} (\hyperlink{class_matrix}{Matrix} $\ast$m, int scalar, \hyperlink{class_matrix}{Matrix} $\ast$target)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains \hyperlink{class_matrix}{Matrix} \hyperlink{class_operations}{Operations}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_operations_a4128cc9366ded09e0a96ef7b229a8d30}\label{class_operations_a4128cc9366ded09e0a96ef7b229a8d30}} 
+\index{Operations@{Operations}!determinant@{determinant}}
+\index{determinant@{determinant}!Operations@{Operations}}
+\subsubsection{\texorpdfstring{determinant()}{determinant()}}
+{\footnotesize\ttfamily float Operations\+::determinant (\begin{DoxyParamCaption}\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{m }\end{DoxyParamCaption})}
+
+Finds determinant. It takes one argument\+: a \hyperlink{class_matrix}{Matrix} Calculates the determinant and returns the result. \mbox{\Hypertarget{class_operations_a6abe02b47920ad0f5a4b87a16d1e8bd0}\label{class_operations_a6abe02b47920ad0f5a4b87a16d1e8bd0}} 
+\index{Operations@{Operations}!inverse@{inverse}}
+\index{inverse@{inverse}!Operations@{Operations}}
+\subsubsection{\texorpdfstring{inverse()}{inverse()}}
+{\footnotesize\ttfamily void Operations\+::inverse (\begin{DoxyParamCaption}\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{m,  }\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{target }\end{DoxyParamCaption})}
+
+\hyperlink{class_matrix}{Matrix} Inversion Operation. It takes three arguments\+: Matrix1 and Target\+Matrix Adds an Identity matrix at the end of Matrix1. It turns M\mbox{[}A$\vert$I\mbox{]}, then calls \hyperlink{class_operations_a34a11aa508d4fa8343dea7ce3cb12a8f}{reduced\+Row\+Echelon\+Form()}. After that \hyperlink{class_matrix}{Matrix} become M\mbox{[}I$^\wedge$-\/1$\vert$A\mbox{]}. Writes second half of the matrix on target. \mbox{\Hypertarget{class_operations_a9187a03ccde6ce58d8a79e0799ae0579}\label{class_operations_a9187a03ccde6ce58d8a79e0799ae0579}} 
+\index{Operations@{Operations}!multiplication@{multiplication}}
+\index{multiplication@{multiplication}!Operations@{Operations}}
+\subsubsection{\texorpdfstring{multiplication()}{multiplication()}}
+{\footnotesize\ttfamily void Operations\+::multiplication (\begin{DoxyParamCaption}\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{m1,  }\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{m2,  }\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{target }\end{DoxyParamCaption})}
+
+Multiplication of two matrices. It takes three arguments\+: Matrix1, Matrix2, and Target\+Matrix Dot-\/\+Products the contents of Matrix1 and Matrix2. Then writes the result on Target\+Matrix. \mbox{\Hypertarget{class_operations_a34a11aa508d4fa8343dea7ce3cb12a8f}\label{class_operations_a34a11aa508d4fa8343dea7ce3cb12a8f}} 
+\index{Operations@{Operations}!reduced\+Row\+Echelon\+Form@{reduced\+Row\+Echelon\+Form}}
+\index{reduced\+Row\+Echelon\+Form@{reduced\+Row\+Echelon\+Form}!Operations@{Operations}}
+\subsubsection{\texorpdfstring{reduced\+Row\+Echelon\+Form()}{reducedRowEchelonForm()}}
+{\footnotesize\ttfamily void Operations\+::reduced\+Row\+Echelon\+Form (\begin{DoxyParamCaption}\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{m,  }\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{target }\end{DoxyParamCaption})}
+
+Reduced Row Echelon Form converter. It takes two argument\+: a \hyperlink{class_matrix}{Matrix} and a target matrix. Reduces the matrix, so variables\textquotesingle{} values can found. \mbox{\Hypertarget{class_operations_a3ebc22c78ef8e19ebdc5d2761b103d22}\label{class_operations_a3ebc22c78ef8e19ebdc5d2761b103d22}} 
+\index{Operations@{Operations}!scalar\+Multiplication@{scalar\+Multiplication}}
+\index{scalar\+Multiplication@{scalar\+Multiplication}!Operations@{Operations}}
+\subsubsection{\texorpdfstring{scalar\+Multiplication()}{scalarMultiplication()}}
+{\footnotesize\ttfamily void Operations\+::scalar\+Multiplication (\begin{DoxyParamCaption}\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{m,  }\item[{int}]{scalar,  }\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{target }\end{DoxyParamCaption})}
+
+Scalar Multiplication. It takes three arguments\+: a \hyperlink{class_matrix}{Matrix}, a scalar value and target. Multiplies all values of the matrix by scalar value and writes it on target \hyperlink{class_matrix}{Matrix} \mbox{\Hypertarget{class_operations_a45086ee9e548ad7a199cc4214b841dff}\label{class_operations_a45086ee9e548ad7a199cc4214b841dff}} 
+\index{Operations@{Operations}!subtraction@{subtraction}}
+\index{subtraction@{subtraction}!Operations@{Operations}}
+\subsubsection{\texorpdfstring{subtraction()}{subtraction()}}
+{\footnotesize\ttfamily void Operations\+::subtraction (\begin{DoxyParamCaption}\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{m1,  }\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{m2,  }\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{target }\end{DoxyParamCaption})}
+
+Subtraction of two matrices. It takes three arguments\+: Matrix1, Matrix2, and Target\+Matrix Subtracts contents of Matrix1 and Matrix2. Then writes the result on Target\+Matrix. \mbox{\Hypertarget{class_operations_a23b256cbd8432c02e7501c7c04d654d7}\label{class_operations_a23b256cbd8432c02e7501c7c04d654d7}} 
+\index{Operations@{Operations}!summation@{summation}}
+\index{summation@{summation}!Operations@{Operations}}
+\subsubsection{\texorpdfstring{summation()}{summation()}}
+{\footnotesize\ttfamily void Operations\+::summation (\begin{DoxyParamCaption}\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{m1,  }\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{m2,  }\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{target }\end{DoxyParamCaption})}
+
+Summation of two matrices. It takes three arguments\+: Matrix1, Matrix2, and Target\+Matrix Adds contents of Matrix1 and Matrix2. Then writes the result on Target\+Matrix. \mbox{\Hypertarget{class_operations_a58bdbb6d16f1848424bbe4bba8e50630}\label{class_operations_a58bdbb6d16f1848424bbe4bba8e50630}} 
+\index{Operations@{Operations}!transpoze@{transpoze}}
+\index{transpoze@{transpoze}!Operations@{Operations}}
+\subsubsection{\texorpdfstring{transpoze()}{transpoze()}}
+{\footnotesize\ttfamily void Operations\+::transpoze (\begin{DoxyParamCaption}\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{m,  }\item[{\hyperlink{class_matrix}{Matrix} $\ast$}]{target }\end{DoxyParamCaption})}
+
+Transpose Operation. It takes three arguments\+: Matrix1 and Target\+Matrix Converts Matrix1\mbox{[}i\mbox{]}\mbox{[}j\mbox{]} to Matrix1\mbox{[}j\mbox{]}\mbox{[}i\mbox{]} and writes the result on Target\+Matrix. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_matrix_operations_8h}{Matrix\+Operations.\+h}\item 
+\hyperlink{_matrix_operations_8cpp}{Matrix\+Operations.\+cpp}\end{DoxyCompactItemize}

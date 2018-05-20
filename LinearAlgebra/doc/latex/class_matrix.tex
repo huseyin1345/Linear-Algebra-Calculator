@@ -1,0 +1,127 @@
+\hypertarget{class_matrix}{}\section{Matrix Class Reference}
+\label{class_matrix}\index{Matrix@{Matrix}}
+
+
+It holds the content of a matrix.  
+
+
+
+
+{\ttfamily \#include $<$Matrix.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_matrix_aad0f8fc2b1b0540e965d762e154452d9}{Matrix} (std\+::string n, int r, int c)
+\item 
+\hyperlink{class_matrix_a07a3cee5bc286ca27ceffe81ce5a2d01}{Matrix} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Another constructor. It creates a matrix with no name. It is using only for creating temporary matrices. \end{DoxyCompactList}\item 
+void \hyperlink{class_matrix_a5514edd105f92133665eee545230e3fd}{assign} ()
+\begin{DoxyCompactList}\small\item\em It takes the content of the matrix from user. \end{DoxyCompactList}\item 
+void \hyperlink{class_matrix_aa1967ad240a5ffaf492800044b7275d9}{print\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Prints the matrix to the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \hyperlink{class_matrix_afdea8580ef7ee0072e0100c72c18e218}{my\+Matrix}
+\begin{DoxyCompactList}\small\item\em A vector of vector that represents a matrix. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_matrix_ab15f3c0e2ef820cc3aa6d58475b15443}{name}
+\begin{DoxyCompactList}\small\item\em Name of the matrix. \end{DoxyCompactList}\item 
+int \hyperlink{class_matrix_aa5b31a8cec6508cf23b72394ff8aabe7}{row\+Size}
+\begin{DoxyCompactList}\small\item\em Row Size of the matrix. \end{DoxyCompactList}\item 
+int \hyperlink{class_matrix_aab666250ce075e35e1d7d0d8097cc884}{column\+Size}
+\begin{DoxyCompactList}\small\item\em Column Size of the matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+It holds the content of a matrix. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_matrix_aad0f8fc2b1b0540e965d762e154452d9}\label{class_matrix_aad0f8fc2b1b0540e965d762e154452d9}} 
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Matrix\+::\+Matrix (\begin{DoxyParamCaption}\item[{std\+::string}]{n,  }\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+Constructor of the matrix. I takes three arguments\+: Name, Row Size and Column Size Creates a matrix with those arguments. \mbox{\Hypertarget{class_matrix_a07a3cee5bc286ca27ceffe81ce5a2d01}\label{class_matrix_a07a3cee5bc286ca27ceffe81ce5a2d01}} 
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Matrix\+::\+Matrix (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Another constructor. It creates a matrix with no name. It is using only for creating temporary matrices. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_matrix_a5514edd105f92133665eee545230e3fd}\label{class_matrix_a5514edd105f92133665eee545230e3fd}} 
+\index{Matrix@{Matrix}!assign@{assign}}
+\index{assign@{assign}!Matrix@{Matrix}}
+\subsubsection{\texorpdfstring{assign()}{assign()}}
+{\footnotesize\ttfamily void Matrix\+::assign (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It takes the content of the matrix from user. 
+
+\mbox{\Hypertarget{class_matrix_aa1967ad240a5ffaf492800044b7275d9}\label{class_matrix_aa1967ad240a5ffaf492800044b7275d9}} 
+\index{Matrix@{Matrix}!print\+Matrix@{print\+Matrix}}
+\index{print\+Matrix@{print\+Matrix}!Matrix@{Matrix}}
+\subsubsection{\texorpdfstring{print\+Matrix()}{printMatrix()}}
+{\footnotesize\ttfamily void Matrix\+::print\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints the matrix to the screen. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_matrix_aab666250ce075e35e1d7d0d8097cc884}\label{class_matrix_aab666250ce075e35e1d7d0d8097cc884}} 
+\index{Matrix@{Matrix}!column\+Size@{column\+Size}}
+\index{column\+Size@{column\+Size}!Matrix@{Matrix}}
+\subsubsection{\texorpdfstring{column\+Size}{columnSize}}
+{\footnotesize\ttfamily int Matrix\+::column\+Size}
+
+
+
+Column Size of the matrix. 
+
+\mbox{\Hypertarget{class_matrix_afdea8580ef7ee0072e0100c72c18e218}\label{class_matrix_afdea8580ef7ee0072e0100c72c18e218}} 
+\index{Matrix@{Matrix}!my\+Matrix@{my\+Matrix}}
+\index{my\+Matrix@{my\+Matrix}!Matrix@{Matrix}}
+\subsubsection{\texorpdfstring{my\+Matrix}{myMatrix}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$double$>$ $>$ Matrix\+::my\+Matrix}
+
+
+
+A vector of vector that represents a matrix. 
+
+\mbox{\Hypertarget{class_matrix_ab15f3c0e2ef820cc3aa6d58475b15443}\label{class_matrix_ab15f3c0e2ef820cc3aa6d58475b15443}} 
+\index{Matrix@{Matrix}!name@{name}}
+\index{name@{name}!Matrix@{Matrix}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Matrix\+::name}
+
+
+
+Name of the matrix. 
+
+\mbox{\Hypertarget{class_matrix_aa5b31a8cec6508cf23b72394ff8aabe7}\label{class_matrix_aa5b31a8cec6508cf23b72394ff8aabe7}} 
+\index{Matrix@{Matrix}!row\+Size@{row\+Size}}
+\index{row\+Size@{row\+Size}!Matrix@{Matrix}}
+\subsubsection{\texorpdfstring{row\+Size}{rowSize}}
+{\footnotesize\ttfamily int Matrix\+::row\+Size}
+
+
+
+Row Size of the matrix. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_matrix_8h}{Matrix.\+h}\item 
+\hyperlink{_matrix_8cpp}{Matrix.\+cpp}\end{DoxyCompactItemize}
